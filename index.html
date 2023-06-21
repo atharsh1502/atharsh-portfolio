@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Atharsh's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="Shortcut Icon" type="image/png" href="images/favicon.png">
+  </head>
+  <script
+    src="https://kit.fontawesome.com/413e1eabaa.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER</p>
+          <h1>Hi, I am <span>Atharsh</span> from India</h1>
+        </div>
+      </div>
+    </div>
+    <!-----------about------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/atharsh_img.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Information Technology graduate with a passion for web development
+              and have a solid foundation in programming languages by developing
+              mini projects using C, C++ and Python. Persuing internship as a
+              Full Stack developer in NULL CLASS. I am seeking a challenging
+              role as a junior software developer to continue learning and
+              contribute to the growth of the company.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />Creating Website for Personal
+                  use as well for a Company
+                </li>
+                <li>
+                  <span>IoT</span><br />Building IoT Applications and
+                  mini-projects
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>(2022 - April) App Developer - Intern</span
+                  ><br />Android Application Development at DLK Careers and
+                  Technologies.
+                </li>
+                <li>
+                  <span>(Current) Full Stack Developer - Intern</span
+                  ><br />Website Development at NULLCLASS.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2024</span><br />
+                  B.TECH IT at Velammal Engineering College.
+                </li>
+                <li>
+                  <span>2006 - 2020</span><br />Schooling at SBOA Schooling And
+                  Junior College.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------services---------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Design, create and maintain websites, providing in the process a
+              cohesive and user-friendly online portal for the use of clients,
+              customers, work colleagues and other interested parties.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Internet of Things(IoT)</h2>
+            <p>Develop mini-projects based on IoT for Schools and Colleges.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Design websites providing in the process a cohesive and
+              user-friendly online portal for the use of clients, customers,
+              work colleagues and other interested parties.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/img1.jpg" />
+            <div class="layer">
+              <h3>Stack Overflow Clone Website</h3>
+              <p>
+                This website gives you a hints and programs which are needed for
+                a developer
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/img2.jpeg" />
+            <div class="layer">
+              <h3>Safety Device (IoT)</h3>
+              <p>
+                It is an IOT project which is based on women's and children
+                security.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/12oYgQt3vFZMXhFyMqg5DaB_7cWSQzYFg/view"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/img3.jpg" />
+            <div class="layer">
+              <h3>My Portfolio Website</h3>
+              <p>
+                This website tells about myself and works which are done by me.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-----------content------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              atharsh.gkrishnan@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 9884597805</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/atharsh_pvt/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/atharshg"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://t.me/Amazer12"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a href="https://twitter.com/atharsh_1502"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <a
+              href="images/Update Atharsh Resume .pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Atharsh</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwHyj-ZEy9CFefTaqtViEn_IHOrmzcSu-REIi5jHHrbqHY7lTcIQzK1Z_SLtYEuHNqJBA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
